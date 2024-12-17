@@ -1,5 +1,4 @@
 import configparser
-
 from pyspark import SparkConf
 
 
@@ -7,7 +6,7 @@ def load_survey_df(spark, data_file):
     return spark.read \
         .option("header", "true") \
         .option("inferSchema", "true") \
-        .csv(data_file)
+        .csv("data/" + data_file)
 
 
 def count_by_country(survey_df):
@@ -17,7 +16,7 @@ def count_by_country(survey_df):
         .count()
 
 
-def get_spark_confs():
+def get_spark_app_config():
     spark_conf = SparkConf()
     config = configparser.RawConfigParser()
     config.optionxform = str

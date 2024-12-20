@@ -1,2 +1,1 @@
-24/12/19 10:55:33 INFO SparkSchemaDemo: Num Partitions before: 2
-24/12/19 10:55:38 INFO SparkSchemaDemo: Num Partitions after: 5
+24/12/19 11:14:27 INFO SparkSQLTableDemo: [[flight_data_tbl, spark_catalog, [airline_db], null, MANAGED, false]]
